@@ -1,0 +1,29 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port dcm_locked_0 -pg 1 -y -100 -defaultsOSRD
+preplace port mb_reset_0 -pg 1 -y -180 -defaultsOSRD
+preplace port ext_reset_in_0 -pg 1 -y -160 -defaultsOSRD
+preplace port slowest_sync_clk_0 -pg 1 -y -180 -defaultsOSRD
+preplace port mb_debug_sys_rst_0 -pg 1 -y -120 -defaultsOSRD
+preplace port aux_reset_in_0 -pg 1 -y -140 -defaultsOSRD
+preplace portBus interconnect_aresetn_0 -pg 1 -y -120 -defaultsOSRD
+preplace portBus bus_struct_reset_0 -pg 1 -y -160 -defaultsOSRD
+preplace portBus peripheral_reset_0 -pg 1 -y -140 -defaultsOSRD
+preplace portBus peripheral_aresetn_0 -pg 1 -y -100 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y -140 -defaultsOSRD
+preplace netloc slowest_sync_clk_0_1 1 0 1 NJ
+preplace netloc aux_reset_in_0_1 1 0 1 NJ
+preplace netloc proc_sys_reset_0_mb_reset 1 1 1 NJ
+preplace netloc proc_sys_reset_0_bus_struct_reset 1 1 1 NJ
+preplace netloc ext_reset_in_0_1 1 0 1 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 NJ
+preplace netloc mb_debug_sys_rst_0_1 1 0 1 NJ
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 1 NJ
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 NJ
+preplace netloc dcm_locked_0_1 1 0 1 NJ
+levelinfo -pg 1 -10 180 370 -top -240 -bot 200
+"
+}
+

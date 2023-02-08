@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/reset_sys/sim/reset_sys.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

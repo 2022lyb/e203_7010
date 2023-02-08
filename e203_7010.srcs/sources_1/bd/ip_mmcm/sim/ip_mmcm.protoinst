@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ip_mmcm": {
+			"proto_instances": {
+			}
+		}
+	}
+}

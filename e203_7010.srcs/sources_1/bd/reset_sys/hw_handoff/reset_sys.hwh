@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 29 13:57:56 2023" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="reset_sys" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="aux_reset_in_0" SIGIS="rst" SIGNAME="External_Ports_aux_reset_in_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="aux_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="bus_struct_reset_0" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_bus_struct_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="bus_struct_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="dcm_locked_0" SIGIS="undef" SIGNAME="External_Ports_dcm_locked_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="dcm_locked"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ext_reset_in_0" SIGIS="rst" SIGNAME="External_Ports_ext_reset_in_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="ext_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn_0" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="interconnect_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mb_debug_sys_rst_0" SIGIS="rst" SIGNAME="External_Ports_mb_debug_sys_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="mb_debug_sys_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="mb_reset_0" SIGIS="rst" SIGNAME="proc_sys_reset_0_mb_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="mb_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn_0" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="peripheral_reset_0" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk_0" SIGIS="clk" SIGNAME="External_Ports_slowest_sync_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="13" FULLNAME="/proc_sys_reset_0" HWVERSION="5.0" INSTANCE="proc_sys_reset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset" VLNV="xilinx.com:ip:proc_sys_reset:5.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v5_0;d=pg164-proc-sys-reset.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_EXT_RST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_AUX_RST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="0"/>
+        <PARAMETER NAME="C_AUX_RESET_HIGH" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_BUS_RST" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_PERP_RST" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_INTERCONNECT_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_PERP_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="reset_sys_proc_sys_reset_0_0"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="RESET_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="External_Ports_slowest_sync_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="slowest_sync_clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ext_reset_in" SIGIS="rst" SIGNAME="External_Ports_ext_reset_in_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ext_reset_in_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aux_reset_in" SIGIS="rst" SIGNAME="External_Ports_aux_reset_in_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aux_reset_in_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mb_debug_sys_rst" SIGIS="rst" SIGNAME="External_Ports_mb_debug_sys_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mb_debug_sys_rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dcm_locked" SIGIS="undef" SIGNAME="External_Ports_dcm_locked_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dcm_locked_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mb_reset" SIGIS="rst" SIGNAME="proc_sys_reset_0_mb_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mb_reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_bus_struct_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bus_struct_reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="peripheral_reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="interconnect_aresetn_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="peripheral_aresetn_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

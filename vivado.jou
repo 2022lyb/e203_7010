@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Feb  2 14:45:10 2023
+# Process ID: 17920
+# Current directory: E:/files/A0_fpga_learn/ZYNQ_7010_FPGA/e203_7010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3856 E:\files\A0_fpga_learn\ZYNQ_7010_FPGA\e203_7010\e203_7010.xpr
+# Log file: E:/files/A0_fpga_learn/ZYNQ_7010_FPGA/e203_7010/vivado.log
+# Journal file: E:/files/A0_fpga_learn/ZYNQ_7010_FPGA/e203_7010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/files/A0_fpga_learn/ZYNQ_7010_FPGA/e203_7010/e203_7010.xpr
+update_compile_order -fileset sources_1

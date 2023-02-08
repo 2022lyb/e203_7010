@@ -1,0 +1,3 @@
+reset_sys_proc_sys_reset_0_0.vhd,vhdl,xil_defaultlib,../../../bd/reset_sys/ip/reset_sys_proc_sys_reset_0_0/sim/reset_sys_proc_sys_reset_0_0.vhd,
+reset_sys.v,verilog,xil_defaultlib,../../../bd/reset_sys/sim/reset_sys.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

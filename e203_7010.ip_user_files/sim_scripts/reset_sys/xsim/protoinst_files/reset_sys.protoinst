@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"reset_sys": {
+			"proto_instances": {
+			}
+		}
+	}
+}
